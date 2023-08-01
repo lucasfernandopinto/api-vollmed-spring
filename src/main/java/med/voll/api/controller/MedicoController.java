@@ -30,8 +30,8 @@ public class MedicoController {
     @GetMapping
     // Pageable - criar paginação dos dados
     public Page<DadosListagemMedico> listar(@PageableDefault(size=10, sort={"nome"}) Pageable paginacao){
-        // convertendo um page de médicos para um page de DadosListagemMedico
-        return repository.findAll(paginacao).map(DadosListagemMedico::new);
+        // convertendo um page de médicos para um page de DadosListagemMedico, listando apenas o médicos ativos
+        return repository.findAllByAtivoTrue(paginacao).map(DadosListagemMedico::new);
 
         // para controlar paginação e ordem de listagem, utilizar os seguintes tópicos na URL:
         // localhost:8080/medicos?page=0 - carrega a página 0
@@ -46,5 +46,14 @@ public class MedicoController {
     public void atualizar(@RequestBody @Valid DadosAtualizacaoMedico dados){
         var medico = repository.getReferenceById(dados.id());
         medico.atualizarInformacoes(dados);
+    }
+
+    @DeleteMapping("/{id}")
+    // anotação PathVariable diz para o spring que o id do método excluir é o mesmo id informado no DeleteMapping
+    // conhecido como parâmetro dinâmico
+    @Transactional
+    public void excluir(@PathVariable Long id){
+        var medico = repository.getReferenceById(id);
+        medico.excluir();
     }
 }
