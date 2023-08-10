@@ -7,7 +7,7 @@ While a development team will be responsible for the mobile application, ours wi
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙️ Functionality
 
 - [x] Doctors' CRUD;
 - [x] Patients' CRUD;
