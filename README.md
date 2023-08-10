@@ -1,35 +1,36 @@
-## 💻 Sobre o projeto
+## 💻 About the project
 
-Voll.med é uma clínica médica fictícia que precisa de um aplicativo para gestão de consultas. O aplicativo deve possuir funcionalidades que permitam o cadastro de médicos e de pacientes, e também o agendamento e cancelamento de consultas.
+Voll.med is a fictional medical clinic in need of an appointment management application. The application should have functionalities that allow the registration of doctors and patients, as well as the scheduling and cancellation of appointments.
 
-Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o nosso será responsável pelo desenvolvimento da API Rest desse projeto.
+While a development team will be responsible for the mobile application, ours will be responsible for developing the REST API for this project.
+
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- [x] CRUD de médicos;
-- [x] CRUD de pacientes;
-- [ ] Agendamento de consultas(em breve);
-- [ ] Cancelamento de consultas(em breve);
-
+- [x] Doctors' CRUD;
+- [x] Patients' CRUD;
+- [ ] Appointment Scheduling (coming soon);
+- [ ] Appointment Cancellation (coming soon);
+- [ ] 
 ---
 
 ## 🎨 Layout
 
-O layout da aplicação mobile está disponível neste link: <a href="https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med">Figma</a>
+The layout of the mobile application is available at this link: <a href="https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med">Figma</a>
 
 ---
 
-## 📄 Documentação
+## 📄 Documentation
 
-A documentação das funcionalidades da aplicação pode ser acessada neste link: <a href="https://trello.com/b/O0lGCsKb/api-voll-med">Trello</a>
+The documentation for the application functionalities can be accessed at this link: <a href="https://trello.com/b/O0lGCsKb/api-voll-med">Trello</a>
 
 ---
 
-## 🛠 Tecnologias
+## 🛠 Technologies
 
-As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do projeto:
+The following technologies were used in the development of the REST API for the project:
 
 - **[Java 17](https://www.oracle.com/java)**
 - **[Spring Boot 3](https://spring.io/projects/spring-boot)**
@@ -41,10 +42,10 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 
 ---
 
-## 📝 Licença
+## 📝 License
 
-Projeto desenvolvido por [Alura](https://www.alura.com.br) e utilizado nos cursos de Spring Boot.
+Project developed by [Alura](https://www.alura.com.br) and used in Spring Boot courses.
 
-Instrutor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira) 
+Instructor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira) 
 
 ---
