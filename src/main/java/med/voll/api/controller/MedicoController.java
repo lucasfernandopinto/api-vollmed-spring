@@ -33,14 +33,17 @@ public class MedicoController {
         // classe do Spring que realiza o encapsulamento do endereço da API
         var uri =  uriBuilder.path("/medicos/{id}").buildAndExpand(medico.getId()).toUri();
 
+        // codigo 201
         return ResponseEntity.created(uri).body(new DadosDetalhamentoMedico(medico));
     }
 
     @GetMapping
     // Pageable - criar paginação dos dados
     public ResponseEntity<Page<DadosListagemMedico>> listar(@PageableDefault(size=10, sort={"nome"}) Pageable paginacao){
-        // convertendo um page de médicos para um page de DadosListagemMedico, listando apenas o médicos ativos
+        // convertendo um page de médicos para um page de DadosListagemMedico, listando apenas os médicos ativos
         var page = repository.findAllByAtivoTrue(paginacao).map(DadosListagemMedico::new);
+
+        // codigo 200
         return ResponseEntity.ok(page);
 
         // para controlar paginação e ordem de listagem, utilizar os seguintes tópicos na URL:
@@ -57,6 +60,7 @@ public class MedicoController {
         var medico = repository.getReferenceById(dados.id());
         medico.atualizarInformacoes(dados);
 
+        // codigo 200
         return ResponseEntity.ok(new DadosDetalhamentoMedico(medico));
     }
 
@@ -70,5 +74,13 @@ public class MedicoController {
 
         //return código 204 - no content
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity detalhar(@PathVariable Long id){
+        var medico = repository.getReferenceById(id);
+
+        // codigo 200
+        return ResponseEntity.ok(new DadosDetalhamentoMedico(medico));
     }
 }
