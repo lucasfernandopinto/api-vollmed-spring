@@ -1,0 +1,42 @@
+_id: req_2a6ef3cff9ff4848bf2c6c8d0110ae7d
+type: Request
+parentId: wrk_665439c88bd74655919b2b2a65a05d3b
+modified: 1692299044898
+created: 1692298910238
+url: http://localhost:8080/pacientes
+name: Cadastrar paciente
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    "nome": "Carlos Ferreira",
+    "email": "rodrigo.ferreira@voll.med",
+    "cpf": "121.763.248-53",
+    "telefone": "4567484153",
+    "endereco": {
+        "logradouro": "rua 1",
+        "bairro": "bairro",
+        "cep": "12345678",
+        "cidade": "Brasilia",
+        "uf": "DF",
+        "numero": "1",
+        "complemento": "complemento"
+        }
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.2
+authentication: {}
+metaSortKey: -1692298910238
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

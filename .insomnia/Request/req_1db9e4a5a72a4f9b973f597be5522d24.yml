@@ -1,0 +1,21 @@
+_id: req_1db9e4a5a72a4f9b973f597be5522d24
+type: Request
+parentId: wrk_665439c88bd74655919b2b2a65a05d3b
+modified: 1692299073374
+created: 1692299059256
+url: http://localhost:8080/pacientes/1
+name: Excluir paciente
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1692299059256
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
