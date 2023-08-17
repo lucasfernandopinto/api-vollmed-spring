@@ -1,0 +1,31 @@
+_id: req_566be8a1f4264d1e8fb0daea732d5c53
+type: Request
+parentId: wrk_665439c88bd74655919b2b2a65a05d3b
+modified: 1692300614017
+created: 1692300132594
+url: http://localhost:8080/login
+name: Efetuar Login
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"login": "ana.souza@voll.med",
+    	"senha": "123456"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.2
+authentication: {}
+metaSortKey: -1692300132594
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

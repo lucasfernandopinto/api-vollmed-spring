@@ -1,0 +1,33 @@
+_id: req_349c3e0b6af149128acd32ad97cd119b
+type: Request
+parentId: wrk_665439c88bd74655919b2b2a65a05d3b
+modified: 1692299133412
+created: 1692299074892
+url: http://localhost:8080/pacientes
+name: Atualizar paciente
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 1,
+    	"nome": "Rodrigo Ferreira",
+    	"email": "rodrigo.ferreira@voll.med"
+
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.2
+authentication: {}
+metaSortKey: -1692299074892
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
