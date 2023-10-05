@@ -8,20 +8,19 @@ import jakarta.validation.constraints.Pattern;
 import med.voll.api.domain.endereco.DadosEndereco;
 
 public record DadosCadastroMedico(
-        @NotBlank // valida se o campo não é nulo e nem vazio (obs.: só para strings)
+        @NotBlank
         String nome,
         @NotBlank
-        @Email // valida formato de email
+        @Email
         String email,
+
         @NotBlank
         String telefone,
         @NotBlank
-        @Pattern(regexp = "\\d{4,6}") // valida quantidade de dígitos (neste caso, de 4 a 6)
+        @Pattern(regexp = "\\d{4,6}")
         String crm,
         @NotNull
         Especialidade especialidade,
-        @NotNull
-        @Valid // valida informações do DTO DadosEndereco
-        DadosEndereco endereco
-)
-{ }
+
+        @NotNull @Valid DadosEndereco endereco) {
+}
