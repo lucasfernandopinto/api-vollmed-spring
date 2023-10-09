@@ -11,10 +11,6 @@ While a development team will be responsible for the mobile application, ours wi
 
 - [x] Doctors' CRUD;
 - [x] Patients' CRUD;
-- [ ] Appointment Scheduling (coming soon);
-- [ ] Appointment Cancellation (coming soon);
-- [ ] 
----
 
 ## 🎨 Layout
 
